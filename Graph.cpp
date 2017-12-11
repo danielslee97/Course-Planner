@@ -289,7 +289,7 @@ void Graph::checkRequirements() {
 		}
 	}
 	if(satisfied && !this->error) {
-		cout << "SOUNDS GREAT. GO FUCK YOURSELF." << endl;
+		cout << "GOOD PLAN. GET TO WORK." << endl;
 	}
 }
 
