@@ -28,7 +28,7 @@ class Graph {
 	bool insertChoices(int key, int min, vector<string> choices);
 	bool insertCredits(string option, int credits); //insert to addCredits
 	void checkError();
-        bool BFS(vector<string> courses);
+        bool checkCourse(vector<string> courses);
 	bool setCredit(string course, int credits);
 	bool setAvailability(string course, string avail);
 	bool setOption(string course, string option);
