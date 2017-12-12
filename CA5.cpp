@@ -277,7 +277,7 @@ bool plannedScheduleParser(Graph *graph, string filename) {
         vectorOfVectors.push_back(innerVector); //Push into the vector of vectors
     }
 	for(int i = 0; i < vectorOfVectors.size(); i++) {
-		if(!graph->BFS(vectorOfVectors[i])) {
+		if(!graph->checkCourse(vectorOfVectors[i])) {
 			getOut = true;
 			break;
 		}
