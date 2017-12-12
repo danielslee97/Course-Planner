@@ -119,7 +119,7 @@ void Graph::checkError() {
 		cout << "BAD PLAN. HERES WHY:" << endl;
 	}
 }	
-bool Graph::BFS(vector<string> courses) {
+bool Graph::checkCourse(vector<string> courses) {
 	string semester = courses[0];
 	for(int i = 1; i < courses.size(); i++) {
 		string course = courses[i];
