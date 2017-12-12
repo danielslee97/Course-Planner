@@ -1,16 +1,20 @@
+# NAMES: Seung Woo Lee, Brandon Donato, Ri Hang Tony Chen
+# Specifiy the target
+all:    Graph.o
 
-all: graph.o
-	./a.out reqfile.txt courses.txt sample.txt
+# Specify the object files that the target depends on
+# Also specify the object files needed to create the executable
 
-graph.o: graph
-	g++ Graph.o CA5.o -o a.out
+# Specify how the object files should be created from source files
+Graph.o:    Graph
+	g++ Graph.o CA5.o -o schedule.exe
 
-graph: Graph.h Graph.cpp
-	g++ -c Graph.cpp
+Graph:  Graph.h Graph.cpp CA5.cpp
 	g++ -c CA5.cpp
+	g++ -c Graph.cpp
 
+# Specify the object files and executables that are generated
+# and need to be removed to re-compile the whole thing
 clean:
-	rm *.o a.out
-
-
+	rm *.o schedule.exe
 
