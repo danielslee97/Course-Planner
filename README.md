@@ -2,7 +2,7 @@
 
 This program reads in a requirement file, a course offering file, and a sample schedule and it will tell you whether you are set to graduate or if there are mistakes or errors within your schedule (e.g. missing prerequirements, course not offered in that semester, etc.)
 
-FORMAT FOR REQUIREMENT FILES:\n
+FORMAT FOR REQUIREMENT FILES:
 CREDITS X Y     --     CREDITS states that you need certain Y amount of X credits
                          SAMPLE: CREDITS C 20 (This means that you need 20 C credits to graduate)
                          
